@@ -1,90 +1,81 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>neXai API Gateway</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexai Search API - Search Engine API untuk Developer</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="logo">NexAI <span>Dev</span></h1>
-            <p>Premium API Gateway for Creators</p>
-        </header>
 
-        <!-- Mockup Dashboard User -->
-        <section class="dashboard glass-panel">
-            <h2>Dashboard Anda</h2>
-            <div class="api-key-box">
-                <span class="label">Your API Key:</span>
-                <input type="text" id="apiKeyInput" value="NEXAI-PRO-8f92a1b3" readonly>
-                <!-- Tombol Copy Manual -->
-                <button class="btn-copy" onclick="copyApiKey()">Copy</button>
-            </div>
-            <div class="stats">
-                <div class="stat-item">
-                    <p>Paket Aktif</p>
-                    <h3>Pro 15k</h3>
-                </div>
-                <div class="stat-item">
-                    <p>Sisa Kuota</p>
-                    <h3>99,998 / 100,000</h3>
-                </div>
-                <div class="stat-item">
-                    <p>Status</p>
-                    <h3 class="active">Aktif (2027)</h3>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section class="pricing">
-            <!-- Paket Gratis -->
-            <div class="card glass-panel">
-                <h3>Starter / Gratis</h3>
-                <h2 class="price">Rp 0</h2>
-                <ul>
-                    <li>10.000 req / bulan</li>
-                    <li>Basic Support</li>
-                    <li>Akses Endpoint Standar</li>
-                </ul>
-                <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20request%20API%20Key%20Gratis" 
-                   class="btn-primary outline" target="_blank">Dapatkan Gratis</a>
-            </div>
-
-            <!-- Paket Pro 15k -->
-            <div class="card glass-panel premium">
-                <div class="badge">Best Value</div>
-                <h3>Pro Monthly Limit</h3>
-                <h2 class="price">Rp 15k<span> / tahun</span></h2>
-                <ul>
-                    <li>100.000 req / bulan</li>
-                    <li>High Speed Server</li>
-                    <li>Prioritas Support</li>
-                </ul>
-                <!-- Tombol Paket Pro 15k -->
-                <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20beli%20paket%20Pro%2015k%20(Rp%2015k)" 
-                   class="btn-primary" target="_blank">Beli Sekarang</a>
-            </div>
-
-            <!-- Paket Pro Max 30k -->
-            <div class="card glass-panel exclusive">
-                <h3>Pro Max Annual</h3>
-                <h2 class="price">Rp 30k<span> / tahun</span></h2>
-                <ul>
-                    <li>1.000.000 req / tahun</li>
-                    <li>Dedicated IP Routing</li>
-                    <li>Akses Semua Fitur NexAI</li>
-                </ul>
-                <!-- Tombol Paket Pro Max Annual -->
-                <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20beli%20paket%20Pro%20Max%20(Rp%2030k)" 
-                   class="btn-primary gold" target="_blank">Beli Sekarang</a>
-            </div>
-        </section>
+<nav class="navbar">
+    <a href="index.html" class="logo">⚡ Nexai Search API</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="register.php" class="btn btn-primary btn-sm">Mulai Gratis</a>
     </div>
+</nav>
 
-    <script src="script.js"></script>
+<header class="hero">
+    <div class="container">
+        <span class="tag">🚀 Search API Tercepat & Terjangkau</span>
+        <h1>Search Engine API<br><span class="gradient-text">untuk Developer</span></h1>
+        <p class="hero-desc">
+            Integrasikan mesin pencarian ke aplikasimu hanya dengan satu request API.
+            Cepat, stabil, dan harganya jauh lebih murah dari kompetitor.
+        </p>
+        <div class="hero-actions">
+            <a href="register.php" class="btn btn-primary btn-lg">Ambil API Key Gratis</a>
+            <a href="pricing.html" class="btn btn-outline btn-lg">Lihat Harga</a>
+        </div>
+
+        <div class="code-preview">
+            <div class="code-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="code-title">request.sh</span>
+            </div>
+<pre class="code-block">curl "https://domainmu.com/api/v1/search.php?api_key=nexai_xxx&q=teknologi+ai"</pre>
+        </div>
+    </div>
+</header>
+
+<section class="container features">
+    <h2 class="section-title">Kenapa Pakai Nexai Search API?</h2>
+    <div class="grid-3">
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Response Cepat</h3>
+            <p>Proxy langsung ke server pencarian kami, tanpa lapisan yang bikin lambat.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Aman & Terkontrol</h3>
+            <p>Setiap request dicek API key, kuota, dan masa aktif secara otomatis.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💸</div>
+            <h3>Harga Terjangkau</h3>
+            <p>Mulai gratis 10.000 request/bulan, upgrade kapan saja tanpa ribet.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container cta">
+    <div class="cta-box">
+        <h2>Siap mulai membangun?</h2>
+        <p>Dapatkan API key gratis dalam 10 detik, tanpa kartu kredit.</p>
+        <a href="register.php" class="btn btn-primary btn-lg">Daftar Sekarang</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Nexai Search API. Semua hak dilindungi.</p>
+    </div>
+</footer>
+
 </body>
-</html>
-  
+        </html>
+        
